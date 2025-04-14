@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-image: url("https://dholakia.foundation/wp-content/uploads/2024/07/64cdf9b824858d5a3de7f188_Sustainable-Development.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    position: relative;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  header h1 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    font-size: 2.8rem;
+    animation: fadeInDown 1.2s ease-out forwards;
+  }
+
+  section {
+    background: #1c1c1c;
+    margin: 30px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,255,128,0.05);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  section:nth-child(2) { animation-delay: 0.3s; }
+  section:nth-child(3) { animation-delay: 0.6s; }
+  section:nth-child(4) { animation-delay: 0.9s; }
+  section:nth-child(5) { animation-delay: 1.2s; }
+
+  h2 {
+    color: #53ff87;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .stat {
+    font-size: 1.2rem;
+    margin: 12px 0;
+  }
+
+  button {
+    background: #2e7d32;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    background: #66bb6a;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #53ff87;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    margin: 40px 10px 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTerk</title>
+    <link rel="shortcut icon" href="images/Greenterk - favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="surverypage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1> **************</h1>
+            <div class="main-heading">
+                <h2></h2>
+            </div>
+        </div>
+        <div class="data">
+            <h3 font="muller next">Climate change is here now. We can limit further warming and the dangers it poses—if we act now. Every fraction of a degree matters</h3><br>
+            <p>What we do between now and 2030 will determine whether we can slow warming enough to avoid climate changes worst impacts. We must
+                 drastically cut emissions and remove some carbon from the atmosphere. typetunately, plants naturally absorb and store carbon. By 
+                 protecting natural habitats and carefully managing farmland and typeests, we can store billions of tons of this “living carbon.”</p>
+            <p>We're facing two existential crises: climate change and rapid biodiversity loss. Reversing these crises requires protecting and sustainably
+                 managing our ocean, land and fresh water</p>
+            <p>The world has already lost nearly one-third of its freshwater ecosystems since 1970, and monitored freshwater populations have 
+                declined by an average of 83%—faster than in any other biome. More than two-thirds of
+                wetlands have been lost since 1900 and two-thirds of the world's longest rivers have lost their connections back to the sea.
+                Climate change puts even more strain on this system. By next year, drought will affect 75% of Earth's population. And while droughts may
+                dry up water supplies in one region, flooding will bring runoff pollution and unsafe living conditions in another. And as the planet warms, so, too, will the
+                water—putting even more freshwater species at risk. Yet dammed and disconnected rivers mean those species won't have pathways type migrating
+                to cooler waters.</p>
+        </div>
+        <div class="user-data">
+            <form id="user-answers">
+                <fieldset>
+                    <legend>1.How many hours do you sleep?</legend>
+                    <label>
+                        <input type="number" placeholder="Sleeping-time(hrs)" name="Sleeping-time" id="sleeping-hrs">
+                    </label>
+                </fieldset><br><br>
+                <fieldset>
+                <legend>2.How many hours do you travel?</legend>
+                <label>
+                    <input type="number" placeholder="travel-time(hrs)" name="tarveling-time" id="travel-hrs">
+                </label>
+            </fieldset><br><br>
+                <fieldset><br><br>
+                    <legend>3.Which Vehicle do you use?</legend>
+                    <label><input type="radio" id="v-car" name="vehicle" value="car">Car<br></label>
+                    <label><input type="radio" id="v-bike" name="vehicle" value="bike">Bike<br></label>
+                    <label><input type="radio" id="v-public" name="vehicle" value="public_transport">Public Transport<br></label>
+                    <label><input type="radio" id="v-hpv" name="vehicle" value="high_pollution_Vehicles">High Pollution Vehicles<br></label>
+                    <label><input type="radio" id="v-none" name="vehicle" value="none">none<br><br></label>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>4.What did you eat regularly?</legend>
+                    <label><input type="radio" id="veg" name="food" value="veg">Mostly Vegetarian<br></label>
+                    <label><input type="radio" id="non-veg" name="food" value="non_veg">Mostly Non-Vegetarian<br></label>
+                    <label><input type="radio" id="both" name="food" value="both">Both Vegetarian and Non-Vegetarian<br><br></label>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>5.Where do you spend more time?</legend>
+                    <label><input type="radio" id="inside" name="spending_time" value="outside">INDOOR<br></label>
+                    <label><input type="radio" id="outside" name="spending_time" value="outside">OUTDOOR<br></label><br><br>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>6.Do you have any solar panels or other renewable energy sources installed in your home?</legend>
+                    <label><input type="radio" id="yes" name="power" value="yes">YES<br></label>
+                    <label><input type="radio" id="no" name="power" value="no">NO<br></label><br><br>
+                </fieldset><br><br>
+
+                <fieldset>
+                    <legend>7.How many units of electricity do you use per month according to the current bill?</legend>
+                    <input type="number" placeholder="enter current units" name="current" id="units">
+                    <label for="units"></label>
+                </fieldset>
+
+                <button type="button" onclick="sourcecode()" id="my-btn">Submit</button>
+                <!-- <a href="result.html"><button type="button" id="resultt">click here</button></a> -->
+            </form>
+        </div>
+    </div>
+    <script src="surveypage.js"></script>
+</body>
+</html>
